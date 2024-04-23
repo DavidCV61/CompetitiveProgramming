@@ -26,8 +26,8 @@ sort(arr.begin(),arr.end());
 
 for(int x:arr){
 
-    cout<<x<<endl;
+    cout<<x<<" ";
 }
- 
+ cout<<endl<<arr.front()<<" "<<arr.back()<<endl;
     return 0;
 }
