@@ -1,4 +1,4 @@
-//Link: 
+//Link: https://leetcode.com/problems/bitwise-and-of-numbers-range/description/
 class Solution {
 public:
     void clearBith(int &n,int i){
