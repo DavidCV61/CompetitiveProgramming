@@ -15,8 +15,7 @@ int powr(int a, int b) {
 
 int main()
 {
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
+	
 
 	cout << powr(2, 20);
 
