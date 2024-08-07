@@ -1,33 +1,43 @@
 #include <bits/stdc++.h>
- 
- //Link: https://atcoder.jp/contests/abc205/tasks/abc205_c
+
+
 using namespace std;
 
+void masmenos(int a, int b){
+
+
+	if(a==b)cout<<"="<<endl;
+	else if(a>b) cout<<">"<<endl;
+	else cout<<"<"<<endl;
+}
 
 int main(){
 	int a,b,c;
+
 	cin>>a>>b>>c;
 
-		string ch;
+	if(a==b || c==0)cout<<"="<<endl;
+	else{
+		if(c%2==0){
+		a=abs(a);
+		b=abs(b);
+
+
+	}
+
+	masmenos(a,b);
+
+	}
+
+
+	
+	
 
 
 
 
-if(c%2==0){
-			if(abs(a)>abs(b)) ch=">";
-		else if(abs(b)>abs(a)) ch="<";
-		else ch="=";
-
-		}else{
-			if(a>b) ch=">";
-		else if(b>a) ch="<";
-		else ch="=";
 
 
-		}
-
-		cout<<ch<<endl;
 
 	return 0;
-
 }
