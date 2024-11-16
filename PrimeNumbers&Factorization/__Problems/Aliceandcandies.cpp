@@ -6,17 +6,30 @@ using namespace std;
 
 int main(){
 
+    int n;
+    cin>>n;
 
-	int n;
-	cin>>n;
-	int ans=0;
-	for(int i=2;i*i<=n;i++){
+    int ans=0;
+    for(int i=1;i*i<=n;i++){
+       
 
-		if(n%i==0 && (n/i-i)%2==0)ans++;
-	}
+        if(n%i==0){
 
-	if(n%2==1)cout<<ans+1<<endl;
-	else cout<<ans<<endl;
-	
-	return 0;
+
+            int aux=(n/i)-i;
+            
+
+            if(aux>=0 && aux%2==0) ans++;
+           
+        }
+    }
+
+    cout<<ans<<endl;
+
+
+  
+   
+
+
+    return 0;
 }
