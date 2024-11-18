@@ -23,7 +23,7 @@ int main(){
 	int n;
 	cin>>n;
 
-	factoriseOpt(n);
+	factorise(n);
 
 	return 0;
 }
